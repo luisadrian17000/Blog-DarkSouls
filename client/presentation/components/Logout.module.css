@@ -1,0 +1,17 @@
+.main-container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    height: 1vh;
+    width: 6vw;
+    padding-right: 55px;
+    padding-bottom: 50px;
+    background-color: rgb(0, 0, 0);
+
+
+}
+
+.logo {
+    height: 50px;
+}

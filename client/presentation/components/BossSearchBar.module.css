@@ -1,0 +1,19 @@
+.wrap {
+  width: min(700px, 90vw);  
+  margin: 14px auto 10px;   
+}
+
+.input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  outline: none;
+  font-size: 14px;
+}
+
+.input:focus {
+  border-color: rgba(255, 215, 0, 0.45);
+}

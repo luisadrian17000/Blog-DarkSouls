@@ -1,0 +1,102 @@
+.overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(4px);
+}
+
+.popup {
+    position: relative;
+
+    width: min(560px, 90vw);
+    padding: 36px 32px;
+
+    background: linear-gradient(180deg, #151515, #050505);
+    border: 1px solid rgba(255, 215, 0, 0.45);
+    border-radius: 10px;
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+    color: white;
+
+    animation: fadeIn 0.2s ease;
+}
+
+.closeButton {
+    position: absolute;
+    top: 14px;
+    right: 18px;
+
+    background: none;
+    border: none;
+
+    color: gold;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.closeButton:hover {
+    color: white;
+}
+
+.label {
+    margin: 0 0 8px;
+
+    color: gold;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.title {
+    margin: 0 0 12px;
+
+    color: gold;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+
+    margin-bottom: 22px;
+}
+
+.info span {
+    padding: 5px 10px;
+
+    border: 1px solid rgba(255, 215, 0, 0.35);
+    border-radius: 999px;
+
+    color: #d8d8d8;
+    font-size: 0.85rem;
+}
+
+.lore {
+    margin: 0;
+
+    color: #e6e6e6;
+    font-size: 1rem;
+    line-height: 1.7;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

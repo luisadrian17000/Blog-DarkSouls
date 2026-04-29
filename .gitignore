@@ -1,0 +1,12 @@
+# env files
+.env
+server/.env
+
+# node
+node_modules/
+
+# build
+dist/
+
+# IDE
+.idea/
